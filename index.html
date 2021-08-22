@@ -2,13 +2,30 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Curso</title>
     <meta name="description" content="Curso de HTML" />
+    <link rel="canonical" href="http://localhost.com/url-canonica">
+    <link rel="icon" href="assets/reliquias.png">
+    <link rel="apple-touch-icon" href="assets/reliquias.png">
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="theme-color" content="#229954">
+    <meta property="og:title" content="HTML Curso" />
+    <meta property="og:description" content="Curso de html" />
+    <meta property="og:url" content="http://localhost/index.html/" />
+    <meta property="og:image" content="http://localhost/assets/reliquias.png" /> 
+    <title>HTML Curso</title>
   </head>
   <body>
-    <h1>HTML Básicos</h1>
+    <h2>Temario</h2>
+    <ul>
+      <li><a href="#basicos">HTML Básicos</a></li>
+      <li><a href="#etiquetas-semanticas">Etiquetas semánticas estructurales</a></li>
+      <li><a href="#etiquetas-linea-bloque">Etiquetas de línea y bloque</a></li>
+      <li><a href="#imagenes">Imágenes</a></li>
+      <li><a href="#listas">Listas</a></li>
+      <li><a href="#enlaces">Enlaces</a></li>
+    </ul>
+    <h1 id="basicos">HTML Básicos</h1>
     <small
       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, ex reprehenderit,
       voluptatum debitis eius totam vel inventore quod consequatur laborum velit sit
@@ -16,5 +33,58 @@
     >
     <blockquote>Yo solo sé, que nada sé</blockquote>
     <cite>Sócrates</cite>
+    <hr />
+    <h2 id="etiquetas-semanticas">Etiquetas semánticas estructurales</h2>
+    <address>Calle 22A #90 - 60</address>
+    <hr />
+    <h2 id="etiquetas-linea-bloque">Etiquetas de línea y bloque</h2>
+    <div>Div - etiqueta bloque por excelencia</div>
+    <span>Span - Etiqueta en línea por excelencia</span>
+    <hr />
+    <h2 id="imagenes">Imagenes - Vectores</h2>
+    <img src="./assets/bat.svg" alt="bat-logo" />
+    <figure>
+      <img
+        src="https://www.tiendanimal.es/articulos/wp-content/uploads/2018/01/que-necesita-un-gato.jpg"
+        alt="Gato pensando"
+      />
+      <figcaption><i>Un gato mirando hacia arriba</i></figcaption>
+    </figure>
+    <hr />
+    <h2 id="listas">Listas de definición</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Es un lenguaje de marcado que define el contenido de la web</dd>
+      <hr>
+      <dt>CSS</dt>
+      <dd>Es un lenguaje de definición de estilos para darle diseño al código HTML</dd>
+      <hr>
+      <dt>JavaScript</dt>
+      <dd>Es el lenguaje de la web.</dt>
+    </dl>
+    <hr>
+    <h2 id="enlaces">Enlaces</h2>
+    <a href="https://google.com" target="_blank" rel="nofollow">Ir a Google</a><br>
+    <a href="https://www.dccomics.com/characters/batman" target="_blank"><img src="./assets/bat.svg" alt="bat"></a><br>
+    <a href="mailto:test@gmail.com">Enlace a correo electrónico</a><br>
+    <a href="tel:+57 3117966879">Enlace a Telefono</a><br>
+    <a href="https://api.whatsaap.com/send?phone=573117966879">Enlace a Whatsaap</a>
+    <hr>
+    <h2>Elemento Interactivos</h2>
+    <details>
+      <summary>Title</summary>
+      <article>
+        <h3>Contenido del acordeón</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, distinctio velit in ea suscipit fugiat quis necessitatibus voluptatibus minima, odit maxime ut iste quidem unde. Debitis molestias maiores quo omnis?</p>
+      </article>
+    </details>
+    <dialog open>
+      Modal nativo HTML
+    </dialog>
+    <a target="_blank" href="https://app.testdome.com/cert/b21a477a8bce4f8f85f909529f928d58" class="testdome-certificate-stamp silver"><span class="testdome-certificate-name">    
+      Julio Ramón Aceve...
+  
+    </span><span class="testdome-certificate-test-name">JavaScript </span><span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></a><script>var stylesheet = "https://app.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
+    <iframe src="http://www.staggeringbeauty.com/" style="border: 1px inset #ddd" width="498" height="598"></iframe>
   </body>
 </html>

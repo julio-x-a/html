@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 500px;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2,
+h1 {
+  color: rgb(241, 86, 30);
+}
